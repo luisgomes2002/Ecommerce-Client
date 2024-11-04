@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 export class ProductsService {
   constructor(private apiService: ApiService) {}
 
-  getProducts = (url: string, params: any): Observable<any> => {
+  getAllProducts = (url: string, params: any): Observable<any> => {
     return this.apiService.get(url, params);
   };
 }
